@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>复制的几种方式</title>
+    
+    
+    
+</head>
+<body>
+    <script src="clipboard.min.js"></script>
+    <script src="jquery-1.8.3.min.js"></script>
+
+    <!-- 第一种：点击复制当前文本 -->
+    <!-- <span class="ldname" data-clipboard-target=".ldname"></span>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    
+        $(".ldname").text("琳琳");
+    
+        var clipboardJS = new ClipboardJS('.ldname');
+        clipboardJS.on('success', function(e) { 
+            alert("1");
+            windows.localhost.href = "weixin://";
+            _czc.push(["_trackEvent","微信","加粉"]); 
+            _hmt.push(['_trackEvent',"微信","加粉"]);
+            e.clearSelection();
+        });
+        clipboardJS.on('error', function(e) {
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+            e.clearSelection();
+        });
+    });
+    </script> -->
+
+    <!-- 第二种：点击复制指定文本内容 -->
+    <!-- <span class="ldname" data-clipboard-text="青枣读吧"></span>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    
+        $(".ldname").text("琳琳");
+    
+        var clipboardJS = new ClipboardJS('.ldname');
+        clipboardJS.on('success', function(e) { 
+            alert("1");
+            e.clearSelection();
+        });
+        clipboardJS.on('error', function(e) {
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+            e.clearSelection();
+        });
+    });
+    </script> -->
+
+    <!-- <button class="btn">Copy_target</button>
+    <div class="div1">hello</div>
+    <script>
+    var clipboard = new ClipboardJS('.btn', {
+    // 通过target指定要复印的节点
+        target: function() {
+            return document.querySelector('.div1');
+        }
+    });
+ 
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+ 
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script> -->
+
+<!-- <button class="btn">Copy</button>
+ <script>
+    var clipboard = new ClipboardJS('.btn', {
+    // 点击copy按钮，直接通过text直接返回复印的内容
+        text: function() {
+            return 'to be or not to be';
+        }
+    });
+ 
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+ 
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script> -->
+
+    <!-- 第三种：弹出居中的模态框 -->
+    <span id="target">yanting001188</span>
+    <button data-clipboard-action="copy" data-clipboard-target="#target" id="copy_btn" style="background:none; border:none">点击我</button>
+    <!--模态框-->
+    <div class="clipboards">
+        <div class="clipboards-main" style="border-radius: 24px; background: #f8f8f8;">
+            <!--<div class="clpclosed " name="closed">×</div>-->
+            <div class="clpbox" style="padding:0 10px; ">
+                <p class="clpinfo">
+                    <strong style="color: #333;"><span style="font-size: 15px; ">燕婷微信</span>: <i class="wxcode">yanting090</i></strong>
+                </p>
+                <p class="clpinfo2" style="text-align: center;font-size: 16px;line-height: 30px; ">
+                    <span style="font-size: 18px; ">微信号已复制</span><br> 您可以到微信中直接粘贴
+                    <br> 添加TA为好友
+                </p>
+                <hr>
+                <div name="closed" style="color: #509ad7; margin-top: 10px; font-weight: bold;">我知道了</div>
+            </div>
+            <div class="clpbox2">
+                <p class="clpinfo2">
+                    您的浏览器不支持此功能，<br> 请您
+                    <span class="red">手动长按复制</span>微信号去添加
+                </p>
+                <p class="clpinfo2">
+                    <span class="wxcode clpwx">yanting090</span>
+                </p>
+
+            </div>
+        </div>
+    </div>
+<style>
+    .clipboards{ position: fixed; top: 0; left: 0; display: none; z-index: 10001; width: 100%; height: 100%; overflow: hidden; background-color: rgba(0,0,0,.4);}
+    .clipboards-main{position: relative; top: 30%; width: 80%; height: auto; padding: 10px; margin: 0 auto; border-radius: 4px; background-color: #fff;}
+    .clpclosed{position: absolute; top: 5px; right: 5px; height: 20px; line-height: 18px; font-size: 16px; text-align: center; width: 20px; border: 1px solid #888; border-radius: 50%;}
+    .clpbox,.clpbox2{ padding: 15px 20px; text-align: center;line-height: 24px;}
+    .clpinfo{ font-size: 18px; color: #ca0e00;}
+    .clpinfo2{font-size: 14px; color: #555; margin-top: 10px;}
+    .red {color: rgb(204, 0, 0);font-weight: bold;}
+    .clpwx{ display: inline-block; background-color: #ca0e00; padding: 6px 10px; border-radius: 4px; color: #fff; font-size: 18px; }
+</style>       
+<script>
+    $(document).ready(function() {
+
+    $(".clipboards").hide();
+
+    $("#target").text("琳琳");
+
+    var clipboardJS = new ClipboardJS('#copy_btn');
+    clipboardJS.on('success', function(e) { 
+        
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        show();
+        e.clearSelection();
+    });
+    clipboardJS.on('error', function(e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        show();
+        e.clearSelection();
+    });
+
+    // 点击我知道了
+    $("div[name=closed]").click(function() {
+        $(".clipboards").fadeOut();
+    });
+    // 点击模态框和其他地方
+    $(".clipboards").on('click', function(a) {
+        alert("1");
+        // 判断点击其他地方
+        if($(a.target).is('.clpclosed') || $(a.target).is('.clipboards')) {
+            alert("2");
+            $(".clipboards").fadeOut();
+        }
+        });
+    });
+
+    // 显示模态框
+    function show() {
+        $(".clipboards").show();
+        $(".clpbox").show();
+        $(".clpbox2").hide();
+    }
+</script>
+
+
+
+
+    <!-- 分别复制不同的内容 -->
+    <!-- <button class="btn" data-clipboard-text="1">Copy</button>
+    <button class="btn" data-clipboard-text="2">Copy</button>
+    <button class="btn" data-clipboard-text="3">Copy</button>
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+    
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+    
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script> -->
+
+</body>
+</html>
