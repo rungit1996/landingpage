@@ -1,0 +1,231 @@
+﻿<div style="background-color: #fff;padding-bottom: 10px;">
+    <ul class="bsml-form-list">
+        <li data-require="true">
+            <label>
+                <span>姓名</span><div class="form-input">
+                    <input name="姓名" id="txtName" class="bsml-input" type="text" placeholder="">
+                </div>
+            </label>
+        </li>
+        <li data-require="true">
+            <label>
+                <span>手机/微信</span><div class="form-input">
+                    <input name="手机/微信" id="txtMobile" class="bsml-input" type="text" placeholder="">
+                </div>
+            </label>
+        </li>
+        <li data-require="true">
+            <label>
+                <span>旅游人数</span><div class="form-input">
+                    <div name="旅游人数" class="bsml-singleselect-container" options="[{&quot;text&quot;:&quot;1人&quot;,&quot;value&quot;:&quot;1人&quot;},{&quot;text&quot;:&quot;2人&quot;,&quot;value&quot;:&quot;2人&quot;},{&quot;text&quot;:&quot;3人&quot;,&quot;value&quot;:&quot;3人&quot;},{&quot;text&quot;:&quot;3人以上&quot;,&quot;value&quot;:&quot;3人以上&quot;}]">
+                        <select name="旅游人数" id="txtNumber" class="bsml-singleselect">
+                            <option value="1人">1人</option>
+                            <option value="2人">2人</option>
+                            <option value="3人">3人</option>
+                            <option value="3人以上">3人以上</option>
+                        </select>
+                    </div>
+                </div>
+            </label>
+        </li>
+        <li data-require="true">
+            <label>
+                <span>计划游玩天数</span><div class="form-input">
+                    <div name="计划游玩天数" class="bsml-singleselect-container" options="[{&quot;text&quot;:&quot;1-3天&quot;,&quot;value&quot;:&quot;1-3天&quot;},{&quot;text&quot;:&quot;3-5天&quot;,&quot;value&quot;:&quot;3-5天&quot;},{&quot;text&quot;:&quot;5-7天&quot;,&quot;value&quot;:&quot;5-7天&quot;},{&quot;text&quot;:&quot;7天以上&quot;,&quot;value&quot;:&quot;7天以上&quot;}]">
+                        <select name="计划游玩天数" id="txtDays" class="bsml-singleselect">
+                            <option value="1-3天">1-3天</option>
+                            <option value="3-5天">3-5天</option>
+                            <option value="5-7天">5-7天</option>
+                            <option value="7天以上">7天以上</option>
+                        </select>
+                    </div>
+                </div>
+            </label>
+        </li>
+    </ul>
+
+    <div class="bsml-form-list-box">
+        <div class="bsml-form-list-submit" data-successhint="期待与你相遇。">
+            <div onclick="subOk();" id="bsmlStyle_comp_58_trans-form-blank-two6"><font id="bsmlStyle_comp_58_trans-form-blank-two7" color="#000000">提交留言</font></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function subOk()
+        {
+            var _name = $("#txtName").val();
+            var _mobile = $("#txtMobile").val();
+            var _number = $("#txtNumber").val();
+            var _days = $("#txtDays").val();
+            
+            var _content = "姓名：" + _name + "</br>手机：" + _mobile + "</br>人数：" + _number + "</br>天数：" + _days;
+            biaodanSubmit(_content);
+        }
+    </script>
+
+    <style type="text/css">
+        ul, li {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+
+        .bsml-form-list label {
+            text-align: left;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 12px;
+            padding: 0 16px;
+        }
+
+            .bsml-form-list label span {
+                position: relative;
+                white-space: nowrap;
+                word-wrap: normal;
+                overflow: hidden;
+                line-height: 38px;
+                text-overflow: ellipsis;
+                display: inline-block;
+                padding-left: 18px;
+            }
+
+            .bsml-form-list label > span::after {
+                content: '';
+                position: absolute;
+                top: 16px;
+                left: 0;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-bottom: 4px solid #333;
+                display: block;
+                width: 0;
+                height: 0;
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+
+        .form-input {
+            display: block;
+            padding: 0;
+            height: 38px;
+            line-height: 38px;
+            color: #999;
+            font-size: 16px;
+        }
+
+        .bsml-form-list input[type=text] {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            text-shadow: none;
+            -webkit-appearance: none;
+            -webkit-user-select: text;
+            box-shadow: none;
+            outline: transparent 0;
+        }
+
+        .bsml-form-list .bsml-input {
+            position: relative;
+            width: 100%;
+            border: 1px solid #f1f1f1;
+            height: 38px;
+            line-height: 38px;
+            padding: 0 17px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .bsml-form-list li {
+            padding: 0px;
+            border-bottom: 0px solid #fff;
+        }
+
+        .bsml-form-list .form-input > div {
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+
+        .bsml-form-list .bsml-singleselect-container {
+            position: relative;
+        }
+
+            .bsml-form-list .bsml-singleselect-container:before {
+                position: absolute;
+                height: 8px;
+                margin-top: -8px;
+                transform: rotate(135deg);
+            }
+
+        .bsml-singleselect-container:before {
+            content: '';
+            width: 8px;
+            right: 15px;
+            border-top: 1px solid #999;
+            border-right: 1px solid #999;
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+            top: 50%;
+        }
+
+        .bsml-singleselect {
+            width: 100%;
+            padding: 0 17px;
+            border: 1px solid #f1f1f1;
+            color: #333;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+
+        .bsml-singleselect {
+            font-size: 16px;
+            background: #fff;
+            outline: 0;
+            margin-left: 0;
+            height: 38px;
+            line-height: 38px;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        form-list-box {
+    display: block;
+    padding: .25rem 16px 0;
+}
+        .bsml-form-list-box {
+    padding: 12px 16px 0 16px;
+}
+        mip-form div {
+    display: none;
+    color: #ec1f5c;
+    font-size: 12px;
+    text-align: left;
+    padding: 0 10% 0 3%;
+}
+        .bsml-form-list-submit {
+    background-color: rgba(53,182,238,1);
+}
+        .bsml-form-list-submit {
+    padding: 0;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 18px;
+    
+    color: #fff;
+}
+        
+        #bsmlStyle_comp_58_trans-form-blank-two7 {
+        color:#fff;
+        }
+    </style>
+</div>

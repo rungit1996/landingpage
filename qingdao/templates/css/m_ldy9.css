@@ -1,0 +1,370 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
+}
+ol, ul {
+	list-style: none
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+a {
+	text-decoration: none;
+}
+body {
+	width: 100%;
+	max-width: 640px;
+	height: auto;
+	margin: 0px auto;
+}
+.red { color:#f00;}
+.wxtel { cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@charset "utf-8";
+/* CSS Document */
+.head { width:100%; height:180px; float:left; background:#09F url(../images/true.png); overflow:hidden;}
+.head .title { width:96%; height:30px; line-height:30px; padding:2%; overflow:hidden;}
+.head .title .home { width:30px; height:30px; display:block; overflow:hidden; float:left; background:url(../images/home-w.png) no-repeat; background-size:contain;}
+.head .title .more { width:30px; height:30px; display:block; overflow:hidden; float:right; background:url(../images/more-w.png) no-repeat; background-size:contain;}
+.head .head-con { width:96%; height:auto; overflow:hidden; float:left; padding:2%;}
+.head .head-con .head-left { width:35%; height:auto; margin-top:10px; float:left; overflow:hidden;}
+.head .head-con .head-left span { width:100%; height:auto; overflow:hidden; display:block; float:left;}
+.head .head-con .head-left span.title-mdd { height:20px; line-height:20px; text-align:left; color:#ffffff80; font-size:16px;}
+.head .head-con .head-left span.title-city { height:60px; line-height:60px; text-align:left; color:#fff; font-size:34px; letter-spacing:2rem;}
+
+.head .head-con .head-right { width:60%; height:auto; overflow:hidden; float:right;}
+.head .head-con .head-right span { width:100%; height:auto; overflow:hidden; margin-bottom:5px; display:block; float:right; text-align:right; font-size:18px; color:#fff;}
+.head .head-con .head-right span i { width:auto; padding:0px 5px; height:20px; line-height:20px; display:block; overflow:hidden; float:right; background:#06F; border-radius:3px; color:#fff; font-size:12px;}
+
+.head .head-con .head-right span a { width:auto; height:30px; line-height:30px; padding:0px 10px; margin-top:5px; font-size:16px; float:right; border-radius:5px; border:1px solid #fff; color:#fff;}
+.head .head-con .head-right span a b{ width:20px; height:20px; margin-right:5px; margin-top:5px; float:left; display:block; overflow:hidden; background:url(../images/contact-w.png) no-repeat; background-size:contain;}
+
+.top { width:100%; height:auto; margin-bottom:20px; float:left; background:#fff ; overflow:hidden;}
+.top .title { width:96%; height:30px; line-height:30px; padding:2%; overflow:hidden; border-bottom:1px solid #f5f5f5;}
+.top .title .top-back { width:15%; height:30px; padding:0px 5px; text-align:center;  float:left;}
+.top .top-min { width:68%; height:30px; line-height:30px; text-align:center; float:left; overflow:hidden; display:block; margin:0px auto;}
+.top .title .back { width:20px; height:20px; padding:0px 5px; margin-top:5px; display:block; overflow:hidden; float:left; background:url(../images/back.png) no-repeat center center; background-size:contain; border-right:1px solid #333; float:left;}
+.top .title .home { width:30px; height:20px; padding:0px 5px; margin-top:5px; display:block; overflow:hidden; float:left; background:url(../images/home.png) no-repeat center center; background-size:contain; float:left;}
+.top .title .more { width:12%; height:20px; margin-top:5px; display:block; overflow:hidden; float:right; background:url(../images/mo.png) no-repeat center center; background-size:contain;}
+.top .top-con { width:96%; height:auto; overflow:hidden; float:left; padding:0 2%; border-bottom:1px solid #f5f5f5;}
+.top .top-con .top-left { width:100%; height:auto; margin-top:10px; float:left; overflow:hidden;}
+.top .top-con .top-left span { width:100%; height:auto; overflow:hidden; display:block; float:left;}
+.top .top-con .top-left span.title-mdd { height:20px; line-height:20px; text-align:left; color:#666; font-size:16px;}
+.top .top-con .top-left span.title-city { height:auto; line-height:60px; text-align:left; color:#333; font-size:34px; letter-spacing:.2rem;}
+.top .top-con .top-left span.title-tit { height:auto; line-height:30px; padding:10px 0px; text-align:left; color:#222; font-size:22px;}
+.top .top-con .top-left span.title-short { height:auto; line-height:22px; font-size:18px; margin-bottom:20px; color:#666; float:left;}
+.top .top-con .top-left span.title-author { width:100%; height:30px; margin-bottom:10px; overflow:hidden; float:left;}
+.top .top-con .top-left span.title-author img { width:30px; height:auto; border-radius:15px; float:left; border:none; margin-right:10px;}
+.top .top-con .top-left span.title-author em { width:auto; height:30px; line-height:30px; float:left; font-size:14px; color:#333;}
+.top .top-con .top-left span.item { display: inline-block;
+    margin-bottom: 17px;
+    width: 92px;
+    height: 32px;
+    background: #4aca6d;
+    border-radius: 3px;
+    font: 14px PingFangSC-Regular;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;}
+.top .top-con .top-left span.item i { display: inline-block;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px; background: url(../images/ans.png) no-repeat left center; background-size:contain; vertical-align: -3px;}
+
+.mt20 { margin-bottom:20px;}
+
+
+.main { width:100%; height:auto; overflow:hidden; float:left;}
+.main .mune { width:100%; height:auto; overflow:hidden; float:left;}
+.main .mune ul { width:100%; height:42px; list-style:none; border-bottom: 1px solid #ccc; float:left; overflow:hidden;}
+.main .mune li { width:25%; height:40px; line-height:40px; border-bottom:2px solid #fff; color:#666; float:left; text-align:center; overflow:hidden; cursor:pointer;}
+.main .mune li.hover { border-bottom:2px solid #F60; color:#000;}
+.main .list { width:96%; padding:2% 2% 20px ; height:auto; float:left; overflow:hidden; border-bottom:1px solid #ccc;}
+.main .list i { width:auto; height:30px; line-height:30px; padding:0px 10px; background:#f6f6f6; color:#666; border-radius:3px; float:left; text-align:center; margin:10px 0px 0px 15px; cursor:pointer;}
+.main .list i.hover { background:#F60; color:#fff;}
+
+.content { width:100%; height:auto; float:left; overflow:hidden; padding-top:20px; margin-bottom:50px;}
+.content ul { list-style:none;}
+.content li { width:47%; height:auto; overflow:hidden; float:left; margin-left:2%; margin-bottom:20px;}
+.content li a { width:100%; height:auto; overflow:hidden; display:block; float:left; color:#333;} 
+.content li img { width:100%; height:auto; border-radius:5px; float:left;}
+.content li b { width:98%; height:35px; line-height:45px;padding-left:2%; font-weight:bold; font-size:16px; float:left; color:#000;}
+.content li span { width:98%; height:30px; line-height:30px; padding-left:2%; font-size:12px; display:block; overflow:hidden; float:left;}
+.content li i { width:auto; height:20px; line-height:20px; border:1px solid #F30; color:#F30; padding:0 5px; margin-left:5px; float:left; font-size:12px; border-radius:3px;}
+
+
+
+
+.recommend { width:96%; height:auto; padding:2%; overflow:hidden; float:left;}
+.recommend .title { width:100%; height:auto; overflow:hidden; float:left;}
+.recommend .title span { width:auto; height:auto; line-height:30px; font-size:20px; margin-left:1%; display:block; float:left; overflow:hidden; color:#333;}
+.recommend .title i { width:auto; height:auto; line-height:30px; font-size:12px; display:block; float:right; overflow:hidden; color:#666;}
+.recommend .recommend-con { width:100%; height:auto; padding:2% 0px 0px; float:left; }
+.recommend .recommend-con ul { width:100%; height:auto; float:left; overflow: hidden; list-style:none;}
+.recommend .recommend-con li { width:32%; height:175px; margin-right:1%; float:left; position:relative;}
+.recommend .recommend-con li a { width:100%; height:auto; display:block; overflow:hidden;}
+.recommend .recommend-con li a img { width:100%; height:auto;}
+
+.recommend .recommend-con li .writer { width:100%; height:46px; position:absolute; left:0px; bottom:0px;}
+.recommend .recommend-con li .writer .writer-img { width:40px; height:40px; margin-left:5px; padding:1px; border:1px solid #fff; display:block; overflow:hidden; float:left; background:#fff; border-radius:50%;}
+.recommend .recommend-con li .writer .writer-img img { width:100%; height:auto;border-radius:50%;}
+.recommend .recommend-con li .writer .writer-name { width:auto; height:25px; line-height:25px; font-size:16px; margin-top:18px; margin-left:10px; color:#333; float:left; display:block; overflow:hidden;}
+.recommend .recommend-con li em { width:50px; height:20px; line-height:20px; border-radius:0px 10px 10px 0px; position:absolute; top:5px; left:0px; font-size:14px; text-align:center; background:#ffba23; color:#fff;}
+
+.recommend .recommend-con { overflow-x: scroll;
+    overflow-y: hidden;}
+
+
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+.recommend .recommend-con::-webkit-scrollbar{
+	display:none;
+    width: 5px;
+    height: 5px;
+    background-color: inset 0 0 6px #006701;
+}
+/*定义滚动条的轨道，内阴影及圆角*/
+.recommend .recommend-con::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px #006701;
+    border-radius: 10px;
+    background-color: inset 0 0 6px #006701;
+}
+/*定义滑块，内阴影及圆角*/
+.recommend .recommend-con::-webkit-scrollbar-thumb{
+    /*width: 10px;*/
+    height: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: rgba(255, 255, 255, 0.7);;
+}
+
+
+
+.popular { width:96%; height:auto; padding:2%; overflow:hidden; float:left;}
+.popular .title { width:100%; height:auto; margin-bottom:10px; overflow:hidden; float:left;}
+.popular .title span { width:auto; height:auto; line-height:30px; font-size:20px; display:block; float:left; overflow:hidden; color:#333;}
+.popular .title i { width:auto; height:auto; line-height:30px; font-size:12px; display:block; float:right; overflow:hidden; color:#ccc;}
+.popular .popular-con { width:100%; height:auto; padding:2% 0px 0px; float:left; }
+.popular .popular-con li { width:44%; height:80px; padding:4% 2% 2%; margin:0px; border-radius:3px; float:left; background:rgba(215, 248, 255, 0.55); position:relative;}
+.popular .popular-con li a { color:#333; width:100%; height:auto; display:block; overflow:hidden; float:left;}
+.popular .popular-con li .tit { width:100%; height:50px; line-height:25px; float:left; overflow: hidden; white-space: pre-wrap; text-overflow: ellipsis;-o-text-overflow:ellipsis}
+.popular .popular-con li.mr { margin-right:3%;}
+.popular .popular-con li.mb { margin-bottom:3%;}
+.popular .popular-con li.recom { background:rgba(255, 214, 199, 0.5) url(../images/recommend.png) no-repeat right bottom;}
+.popular .popular-con li i { width:100%; height:25px; line-height:25px; font-size:14px; color:#666; display:block; overflow:hidden; float:left;}
+
+.popular .popular-con li em { width:auto; height:20px; line-height:20px; padding:0 5px; position:absolute; top:-10px; left:10px; color:#fff; font-size:12px; border-radius:2px;}
+.popular .popular-con li.recom em {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##ff8502,endColorStr=#f24c36); /*IE*/ 
+	background:-moz-linear-gradient(left,#ff8502,#f24c36);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#ff8502), to(#f24c36));/*谷歌*/ 
+	background-image: -webkit-gradient(linear,left right,left right,color-start(0, #ff8502),color-stop(1, #f24c36));/* Safari & Chrome*/
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ff8502', endColorstr='#f24c36'); /*IE6 & IE7*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ff8502', endColorstr='#f24c36')"; /* IE8 */}
+
+.popular .popular-con li.favou em {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##07e599,endColorStr=#20d754); /*IE*/ 
+	background:-moz-linear-gradient(left,#07e599,#20d754);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#07e599), to(#20d754));/*谷歌*/ 
+	background-image: -webkit-gradient(linear,left right,left right,color-start(0, #07e599),color-stop(1, #20d754));/* Safari & Chrome*/
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#07e599', endColorstr='#20d754'); /*IE6 & IE7*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#07e599', endColorstr='#20d754')"; /* IE8 */}
+
+
+.information { width:96%; height:auto; padding:2%; overflow:hidden; float:left;}
+.information .title { width:100%; height:auto; margin-bottom:10px; overflow:hidden; float:left;}
+.information .title span { width:auto; height:auto; line-height:30px; font-size:20px; display:block; float:left; overflow:hidden; color:#333;}
+.information .infor-con { width:100%; height:auto; overflow:hidden; float:left;}
+.information .infor-con .address { width:100%; height:60px; float:left; overflow:hidden;}
+.information .infor-con .address .address-con { width:60%; height:30px; padding:15px 0px; float:left; overflow:hidden;}
+.information .infor-con .address .address-con i { width:20px; height:20px; margin-top:5px; margin-right:5px; background:url(../images/location.png) no-repeat center center; background-size:contain; display:block; overflow:hidden; float:left;}
+.information .infor-con .address .address-con span { width:auto; height:30px; line-height:30px; display:block; overflow:hidden; float:left;}
+.information .infor-con .address .address-tel { width:30%; height:30px; padding:15px 0px; border-radius:3px; float:right; background:rgba(255, 214, 199, 0.5) url(../images/ico-contact.png) no-repeat left top; background-size:contain;}
+.information .infor-con .address .address-tel a { width:67%; height:30px; line-height:30px; padding-left:30%; margin-left:3%; color:#F60; display:block; overflow:hidden;  background: url(../images/contact-r.png) no-repeat center left; background-size:contain;}
+.information .infor-con li { width:98%; height:25px; margin-top:20px; float:left; overflow:hidden; padding-right:2%;/* background: url(../images/next.png) no-repeat right center;*/ background-size:contain;}
+.information .infor-con li i { width:20px; height:20px; margin-top:2px; display: block; overflow:hidden; float:left; margin-right:10px;}
+.information .infor-con li i.time { background:url(../images/time.png) no-repeat center center; background-size:contain;}
+.information .infor-con li i.traffic { background:url(../images/car.png) no-repeat center center; background-size:contain;}
+.information .infor-con li i.ticket { background:url(../images/ticket.png) no-repeat center center; background-size:contain;}
+
+.information .infor-con .tips { width:94%; height:auto; padding:3%; margin:20px 0px; border-radius:3px; overflow:hidden; float:left; background:rgba(215, 248, 255, 0.55);}
+.information .infor-con .tips .tips-img { width:15%; height:46px; float:left; background:url(../images/info.png) no-repeat center center; background-size:contain;}
+.information .infor-con .tips .tips-info { width:85%; height:46px; line-height:22px; font-size:14px; color:#333; float:right;} 
+
+.comment { width:96%; height:auto; padding:2%; overflow:hidden; float:left; border-bottom:1px solid #f5f5f5;}
+.comment .title { width:100%; height:auto; margin-bottom:10px; overflow:hidden; float:left;}
+.comment .title span { width:auto; height:auto; line-height:30px; font-size:20px; display:block; float:left; overflow:hidden; color:#333;}
+.comment .title i { width:auto; height:auto; line-height:30px; font-size:12px; display:block; float:right; overflow:hidden; color:#666;}
+.comment .comment-list { width:100%; height:auto; overflow:hidden; float:left;}
+.comment .comment-list i { width:auto; height:22px; line-height:22px; padding:3px 10px; margin:10px 10px 0px 0px; font-size:14px; float:left; background:#d7f8ff; border-radius:3px; color:#333;}
+.comment .comment-infor { width:100%; height:auto; margin-top:20px; float:left; overflow:hidden;}
+.comment .comment-infor li { width:100%; height:auto; margin-bottom:20px; padding-top:20px; overflow:hidden; float: left;  border-top:1px solid #f5f5f5;}
+.comment .comment-infor li .tit { width:100%; height:50px; overflow:hidden; float:left;}
+.comment .comment-infor li .tit .tit-img { width:50px; height:auto; float:left; margin-right:2%; overflow:hidden;}
+.comment .comment-infor li .tit .tit-img img { width:50px; height:50px; border-radius:50%; float:left;}
+.comment .comment-infor li .tit .tit-name { width:60%; height:25px; float:left; overflow:hidden;}
+.comment .comment-infor li .tit .tit-name em { width:auto; height:25px; line-height:25px; margin-right:10px; float:left; overflow:hidden; font-size:16px;}
+.comment .comment-infor li .tit .tit-name i { width:auto; height:20px; line-height:20px; margin-top:2px; padding:0px 10px; background:#FC0; border-radius:3px; font-size:12px; text-align:center; float:left;}
+.comment .comment-infor li .tit .tit-star { width:60%; height:25px; overflow:hidden; float:left;}
+.comment .comment-infor li .tit .tit-star img { width:20px; height:20px; border:none; float:left; margin-right:3px;}
+.comment .comment-infor li .info { width:100%; height:auto; overflow:hidden; float:left; position:relative; color:#666;}
+.comment .comment-infor li .info i { width:40px; height:20px; line-height:20px; padding:0px 5px; border-radius:1px; background:#ff8502 url(../images/next.png) no-repeat center center; background-size:contain; position:absolute; right:5px; bottom:10px; color:#fff; font-size:12px; text-align:center;}
+.comment .comment-infor li .info i.exp {FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##07e599,endColorStr=#20d754); /*IE*/ 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##ff8502,endColorStr=#f24c36); /*IE*/ 
+	background:-moz-linear-gradient(left,#ff8502,#f24c36);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#ff8502), to(#f24c36));/*谷歌*/ 
+	background-image: -webkit-gradient(linear,left right,left right,color-start(0, #ff8502),color-stop(1, #f24c36));/* Safari & Chrome*/
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ff8502', endColorstr='#f24c36'); /*IE6 & IE7*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ff8502', endColorstr='#f24c36')"; /* IE8 */}
+.comment .comment-infor li .info i.pack {FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##07e599,endColorStr=#20d754); /*IE*/ 
+	background:-moz-linear-gradient(left,#07e599,#20d754);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#07e599), to(#20d754));/*谷歌*/ 
+	background-image: -webkit-gradient(linear,left right,left right,color-start(0, #07e599),color-stop(1, #20d754));/* Safari & Chrome*/
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#07e599', endColorstr='#20d754'); /*IE6 & IE7*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#07e599', endColorstr='#20d754')"; /* IE8 */}
+
+.comment .comment-infor li .info p { width:100%; height:auto; margin:10px 0px; overflow:hidden; float:left; }
+.comment .comment-infor li .img { width:100%; height:auto; overflow:hidden; float:left;}
+.comment .comment-infor li .img img { width:24%; height:auto; float:left; margin-right:1%; border-radius:3px;}
+
+
+
+.comment .comment-infor li .reply { width:100%; height:auto; padding:2% 0; overflow:hidden; float:left; }
+.comment .comment-infor li .reply .reply-name { width:100%; height:30px; padding:1px; margin-bottom:5px; border-radius:15px 0px 0px 15px; overflow:hidden; float:left;}
+.comment .comment-infor li .reply .reply-name img { width:30px; height:30px; margin-right:10px; border-radius:50%; float:left;}
+.comment .comment-infor li .reply .reply-name span { width:auto; height:30px; line-height:30px; display:block; float:left; overflow:hidden; font-size:16px; color:#222;}
+
+.comment .comment-infor li .reply .reply-name {FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##cecece,endColorStr=#ffffff); /*IE*/ 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##cecece,endColorStr=#ffffff); /*IE*/ 
+	background:-moz-linear-gradient(left,#cecece,#ffffff);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#cecece), to(#ffffff));/*谷歌*/ 
+	background-image: -webkit-gradient(linear,left right,left right,color-start(0, #cecece),color-stop(1, #ffffff));/* Safari & Chrome*/
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cecece', endColorstr='#ffffff'); /*IE6 & IE7*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cecece', endColorstr='#ffffff')"; /* IE8 */}
+
+.comment .comment-infor li .reply p { width:100%; height:auto; color:#666; overflow:hidden; float:left;}
+.comment .comment-infor li .reply p i { color:#F60;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.answer { width:96%; height:auto; padding:2%; overflow:hidden; float:left;}
+.answer .title { width:100%; height:auto; overflow:hidden; float:left;}
+.answer .title span { width:auto; height:auto; line-height:30px; font-size:20px; display:block; float:left; overflow:hidden; color:#333;}
+.answer .title i { width:auto; height:auto; line-height:30px; font-size:12px; display:block; float:right; overflow:hidden; color:#ccc;}
+.answer .answer-infor { width:100%; height:auto; margin-top:20px; float:left; overflow:hidden;}
+.answer .answer-infor li { width:100%; height:auto; margin-bottom:20px; overflow:hidden; float: left;}
+.answer .answer-infor li .tit { width:100%; height:50px; overflow:hidden; float:left;}
+.answer .answer-infor li .tit .tit-img { width:50px; height:auto; float:left; margin-right:2%; overflow:hidden;}
+.answer .answer-infor li .tit .tit-img img { width:50px; height:50px; border-radius:50%; float:left;}
+.answer .answer-infor li .tit .tit-name { width:60%; height:25px; float:left; overflow:hidden;}
+.answer .answer-infor li .tit .tit-name em { width:auto; height:25px; line-height:25px; margin-right:10px; float:left; overflow:hidden; font-size:16px;}
+.answer .answer-infor li .tit .tit-name i { width:auto; height:20px; line-height:20px; margin-top:2px; padding:0px 10px; background:#FC0; border-radius:3px; font-size:12px; text-align:center; float:left;}
+.answer .answer-infor li .tit .tit-star { width:60%; height:25px; overflow:hidden; float:left;}
+.answer .answer-infor li .tit .tit-star img { width:20px; height:20px; border:none; float:left; margin-right:3px;}
+.answer .answer-infor li .info { width:100%; height:auto; overflow:hidden; float:left; position:relative;}
+.answer .answer-infor li .best { background:url(../images/ico-1.png) no-repeat top right; }
+.answer .answer-infor li .info p { width:100%; height:auto; margin:10px 0px 0px; overflow:hidden; float:left; }
+.answer .answer-infor li .info p img { max-width:100%; height:auto; border:none; }
+.answer .answer-infor li .info .praise { width:100%; height:auto; margin:10px 0px; color:#666; overflow:hidden; float:left;}
+.answer .answer-infor li .info .praise .pra { width:auto; padding-left:25px; height:20px; display:block; text-align:left; float:left; overflow:hidden; background:url(../images/pra.png) no-repeat left center; background-size:contain; margin-right:10px;}
+.answer .answer-infor li .info .praise .rep { width:auto; padding-left:25px; height:20px; display:block; text-align:left; float:left; overflow:hidden; background:url(../images/rep.png) no-repeat left center; background-size:contain;}
+.answer .answer-infor li .reply { width:96%; height:auto; padding:2% 2%; overflow:hidden; float:left; border-bottom:1px dashed #ccc;}
+.answer .answer-infor li .reply .reply-name { width:100%; height:30px; padding:1px; margin-bottom:5px; border-radius:15px 0px 0px 15px; overflow:hidden; float:left;}
+.answer .answer-infor li .reply .reply-name img { width:30px; height:30px; margin-right:10px; border-radius:50%; float:left;}
+.answer .answer-infor li .reply .reply-name span { width:auto; height:30px; line-height:30px; display:block; float:left; overflow:hidden; font-size:16px; color:#222;}
+
+.answer .answer-infor li .reply .reply-name {FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##cecece,endColorStr=#ffffff); /*IE*/ 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##cecece,endColorStr=#ffffff); /*IE*/ 
+	background:-moz-linear-gradient(left,#cecece,#ffffff);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#cecece), to(#ffffff));/*谷歌*/ 
+	background-image: -webkit-gradient(linear,left right,left right,color-start(0, #cecece),color-stop(1, #ffffff));/* Safari & Chrome*/
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cecece', endColorstr='#ffffff'); /*IE6 & IE7*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cecece', endColorstr='#ffffff')"; /* IE8 */}
+
+.answer .answer-infor li .reply p { width:100%; height:auto; margin-top:5px; overflow:hidden; float:left;}
+.answer .answer-infor li .reply p img { max-width:100%; height:auto; border:none;}
+.answer .answer-infor li .reply p i { color:#F60;}
+
+.related { width:96%; height:auto; padding:2%; overflow:hidden; float:left;}
+.related .title { width:100%; height:auto; overflow:hidden; float:left; margin-bottom:15px;}
+.related .title span { width:auto; height:auto; line-height:30px; font-size:20px; margin-left:1%; display:block; float:left; overflow:hidden; color:#333;}
+.related li { width:100%; height:auto; overflow:hidden; float:left; border-bottom:1px dashed #f5f5f5; padding-bottom:15px;}
+.related li span.tit { width:100%; height:40px; line-height:40px; display:block; float:left; overflow:hidden; font-size:16px; color:#111;}
+
+.related li span.item { width:100%; height:20px; display:block; overflow:hidden; float:left;}
+.related li span.item em { width:auto; height:16px; line-height:20px; font-size:12px; display:block; color:#888;}
+.related li span.item em.zan { background:url(../images/pra.png) no-repeat center left; margin-right:10px; padding-right:10px; border-right:1px solid #999; background-size:contain; padding-left:22px; float:left; display:block; }
+
+.related li .info { width:100%; height:auto; overflow:hidden; float:left; position:relative;}
+.related li .info i { width:40px; height:20px; line-height:20px; padding:0px 5px; border-radius:1px; background:#ff850285 url(../images/next.png) no-repeat center center; background-size:contain; position:absolute; right:5px; bottom:10px; color:#fff; font-size:12px; text-align:center;}
+.related li .info i.exp {FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##01c537,endColorStr=#70e290); /*IE*/ 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##01c537,endColorStr=#70e290); /*IE*/ 
+	background:-moz-linear-gradient(left,#01c537,#70e290);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#01c537), to(#70e290));/*谷歌*/ 
+	background-image: -webkit-gradient(linear,left right,left right,color-start(0, #01c537),color-stop(1, #70e290));/* Safari & Chrome*/
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#01c537', endColorstr='#70e290'); /*IE6 & IE7*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#01c537', endColorstr='#70e290')"; /* IE8 */}
+.related li .info i.pack {FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##07e599,endColorStr=#20d754); /*IE*/ 
+	background:-moz-linear-gradient(left,#07e599,#20d754);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#07e599), to(#20d754));/*谷歌*/ 
+	background-image: -webkit-gradient(linear,left right,left right,color-start(0, #07e599),color-stop(1, #20d754));/* Safari & Chrome*/
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#07e599', endColorstr='#20d754'); /*IE6 & IE7*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#07e599', endColorstr='#20d754')"; /* IE8 */}
+
+.related li .info p { width:100%; height:20px; line-height:20px; font-size:14px; margin:0px 0px 10px 0px; color:#666; overflow:hidden; float:left; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot { width:100%; height:auto; overflow:hidden; float:left;}
+.foot .wd { width:100%; height:auto; margin:30px 0px 15px; float:left;}
+.foot .wd em { width:100%; height:30px; background:url(../images/wd.png) no-repeat center center; background-size:contain; float:left;}
+.foot .wd i ,.foot .wd a {  width:100%; height:20px; line-height:20px; display:block; overflow:hidden; text-align:center; float:left; color:#ccc; font-size:12px;}
+.foot .wd a { color:#999;}
+.foot p { width:100%; height:30px; line-height:30px; text-align:center; font-size:14px; color:#ccc; float:left;}
+.baseline { width:100%; height:30px; line-height:30px; text-align:center; color:#ccc; float:left; font-size:12px;}
+.footer { width:100%; height:40px; position:fixed; left:0px; bottom:0px; background:#f90;}
+.footer .footer-com { width:auto; height:40px; line-height:40px; overflow:hidden; margin:0px auto; text-align:center; color:#fff; font-weight:bold;}
