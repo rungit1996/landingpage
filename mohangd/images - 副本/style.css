@@ -1,0 +1,52 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*模板页面样式*/
+
+body{width:1000px;margin:0 auto;color:#51504D;font:12px/18px Microsoft YaHei, Verdana, Geneva, sans-serif;}
+html {overflow-x:hidden; overflow-y:auto;background:#E5DDC8;} 
+
+
+* {margin:0;padding:0;}
+
+ol, ul {list-style: none outside none;}
+img {border:none;max-width:100%;}
+
+.clear {clear:both;}
+.fl{float:left;width:100%}
+.fl img{width:100%}
+.fr{float:right;}
+
+.cont{background:#fff;width:100%;float:left;}
+
+.fwtop {width:100%;float:left;}
+.fwtop img{width:100%}
+
+.fwbottom {width:100%;float:left;height:420px;}
+
+.red{color:#FF0000;}
+
+
+
+.cont1{width:96%;float:left;font-size:17px;line-height:35px;padding:2%;color:#000}
+.cont1 span{color:#ff0000}
+
+
+
+
+.cont2{width:100%;float:left;background:#fff;}
+
+.cont2 .txt{width:96%;margin:1% 2%;font-size:18px;line-height:30px;}
+.cont2 .txt span{color:#ff0000}
+.cont2 p{margin-top:10px;text-indent:0em;}
+
+
+
+@media screen and (max-width: 640px) { 
+
+
+body{width:100%;margin:0 auto;color:#51504D;}
+.fwtop{height:auto}
+.fwtop img{height:auto}
+
+
+} 
