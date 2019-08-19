@@ -680,7 +680,84 @@
 		
 <p style="display: none;">
 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277881238'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/z_stat.php%3Fid%3D1277881238%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-</p>   
+</p>
+<!--一键复制微信号-->
+<span id="target" style="font-size:12px; color:#CCC" data-clipboard-action="copy" data-clipboard-target=".wxcode">yanting001188</span>
+<button style="background:none; border:none" class="wxcode" data-clipboard-action="copy" data-clipboard-target=".wxcode">yanting001188</button>
+
+<button data-clipboard-action="copy" data-clipboard-target="#target" id="copy_btn" style="background:none; border:none"></button>
+
+<script src="style1/js/layer_mobile/layer.js"></script>
+<script src="style1/js/clipboard.min.js"></script>
+
+<script>
+			$(document).ready(function() {
+				var targetText = $("#target").text();
+				var clipboardJS = new ClipboardJS('#copy_btn');
+				clipboardJS.on('success', function(e) { 
+					
+					_czc.push(["_trackEvent","微信","加粉"]); 
+					_hmt.push(['_trackEvent',"微信","加粉"]);
+
+					console.info('Action:', e.action);
+					console.info('Text:', e.text);
+					console.info('Trigger:', e.trigger);
+					show();
+					e.clearSelection();
+				});
+				clipboardJS.on('error', function(e) {
+					console.info('Action:', e.action);
+					console.info('Text:', e.text);
+					console.info('Trigger:', e.trigger);
+					show();
+					e.clearSelection();
+				});
+			});
+
+			function show() {
+				$(".clipboards").show();
+				$(".clpbox").show();
+				$(".clpbox2").hide();
+			}
+		</script>
+		<script>
+			$(function() {
+
+				$("div[name=closed]").click(function() {
+					$(".clipboards").fadeOut();
+				});
+				$(".clipboards").on('click', function(a) {
+					if($(a.target).is('.clpclosed') || $(a.target).is('.clipboards')) {
+						$(".clipboards").fadeOut();
+					}
+				});
+
+			})
+			var str_copy_last; 
+			var _czc = _czc||[];
+			var stxlwx="no";
+			function gaSend(a) {
+				if( a.trim() == stxlwx)  
+				{
+					window._agl && window._agl.push(['track', ['success', {t: 3}]]);
+				}
+			} 
+			 function checkSelection() {
+				var a = document.selection ? document.selection.createRange().text : document.getSelection();
+				str_copy_last && !a.toString() ? (gaSend(str_copy_last), str_copy_last = "") : a.toString() && (str_copy_last = a.toString())
+			}
+			$(function () {
+				// var arr_wx=['yanting001188','yanting001188' ];   //这里是微信
+				var arr_wx=['yanting001188'];   //这里是微信
+				var wx_index=Math.floor((Math.random()*arr_wx.length));
+				stxlwx=arr_wx[wx_index];  
+				$(".wxcode").text(stxlwx);    
+				setInterval("checkSelection()", 500); //没500毫秒触发一次.
+			});
+			$(".zaaxwxh").click(function() {
+				$("#copy_btn").trigger("click");
+			})
+		</script>   
 
 </body>
 
