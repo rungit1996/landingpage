@@ -13,155 +13,6 @@
 
     <link href="static/css/open.css" rel="stylesheet" />
 
-    <style>
-        .blue {
-            display: inline-block;
-            color: #01AAED;
-            margin: 6px 0;
-        }
-
-        .layui-carousel img {
-            width: 100%;
-        }
-
-        body {
-            background-image: url(static/images/bb1.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center center;
-        }
-
-        .layui-elem-field legend {
-            color: #fff;
-            text-shadow: 2px 2px 5px #000;
-        }
-
-        .fly-footer {
-            border-top: 0px;
-            color: rgb(155, 153, 153);
-            font-size: 10px;
-        }
-
-            .fly-footer p a {
-                color: #fff;
-            }
-
-        .weixin {
-            font-weight: bold;
-        }
-        .ui-icon-rz {
-            background: url(img/rz.png) no-repeat center center;
-            width: 58px;
-            height: 20px;
-            display: inline-block;
-            vertical-align: text-bottom;
-            margin-right: 4px;
-        }
-        h4 {
-            margin: 0;
-            font-size: 14px;
-            font-weight: normal;
-            color: #f80;
-            line-height: 22px;
-            margin-top: 10px;
-
-        }
-
-        .ldwximg_m {
-            width: 100px;
-            height: 120px;
-        }
-        .ldwximg_pc {
-            width: 50%;
-            height: 320px;
-        }
-        .layui-m-layercont {
-            padding: 0px 0px;
-        }
-
-        .ui-popcont {
-            background-color:#f4f4f4;
-        }
-
-        .ui-pop-ok{
-            display: inline-block;
-            width: 50%;
-            text-align: center;
-            text-decoration: none;
-            height: 50px;
-            line-height: 50px;
-            box-shadow: none;
-            color: #1381ff;
-            border: none;
-            background: #fff;
-            font-size: 15px;
-            padding: 0;
-            cursor: pointer;
-            outline: none;
-        }
-        .ui-pop-ok button{
-            display: inline-block;
-            width: 50%;
-            text-align: center;
-            text-decoration: none;
-            height: 50px;
-            line-height: 50px;
-            box-shadow: none;
-            color: #1381ff;
-            border: none;
-            background: #fff;
-            font-size: 15px;
-            padding: 0;
-            cursor: pointer;
-            outline: none;
-        }
-        .ui-pop-ok>font {
-            color: #50b674;
-        }
-        .ui-pop-no {
-            width: 50%;
-            height: 50px;
-            line-height: 50px;
-        }
-        .ui-icon-rz {
-            background: url(static/images/rz.jpg) no-repeat center center;
-            width: 58px;
-            height: 20px;
-            display: inline-block;
-            vertical-align: text-bottom;
-            margin-right: 4px;
-            margin-top: 20px;
-        }
-
-        .p_center_pro {
-            font-size: 120%;
-            text-align: center;
-        }
-        .p_indent {
-            /* text-indent: 2em; */
-            padding-top: 10px;
-        }
-        .p_img {
-            text-align: center;
-        }
-        .span_red {
-            color: #ff0000;
-        }
-        p {
-            padding-left: 10px;
-        }
-    </style>
-
-<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.1/jquery.lazyload.min.js"></script>
-<script type="text/javascript">
-    $(function() {
-        $("img").lazyload({effect: "fadeIn"});
-console.log($("img"));
-    });
-</script>
-
 <!--统计代码-->
 <script>
 var _hmt = _hmt || [];
@@ -176,74 +27,6 @@ var _hmt = _hmt || [];
 </head>
 
 <body>
-    <style>
-        .weixin {
-            font-size: 16px;
-            font-weight: bold;
-            color: #f00;
-        }
-    </style>
-
-    <div class="fly-header layui-bg-black">
-        <div class="layui-container">
-            <a class="fly-logo">
-                <img class="lazy" src="static/picture/logo2.png" alt="layui">
-            </a>
-            <ul class="layui-nav fly-nav layui-hide-xs">
-                <li class="layui-nav-item layui-this">
-                    <a><i class="iconfont icon-jiaoliu"></i>交流</a>
-                </li>
-                <li class="layui-nav-item">
-                    <a><i class="iconfont icon-iconmingxinganli"></i>旅游</a>
-                </li>
-            </ul>
-
-            <ul class="layui-nav fly-nav-user">
-
-                <!-- 未登入的状态 -->
-                <li class="layui-nav-item">
-                    <a class="iconfont icon-touxiang layui-hide-xs"></a>
-                </li>
-                <li class="layui-nav-item">
-                    <a>登入</a>
-                </li>
-                <li class="layui-nav-item">
-                    <a>注册</a>
-                </li>
-                <li class="layui-nav-item layui-hide-xs">
-                    <a class="iconfont icon-qq"></a>
-                </li>
-                <li class="layui-nav-item layui-hide-xs">
-                    <a class="iconfont icon-weibo"></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="layui-hide-xs">
-        <div class="fly-panel fly-column">
-            <div class="layui-container">
-                <ul class="layui-clear">
-                    <li class="layui-hide-xs"><a>首页</a></li>
-                    <li class="layui-this"><a>提问</a></li>
-                    <li><a>分享<span class="layui-badge-dot"></span></a></li>
-                    <li><a>讨论</a></li>
-                    <li><a>建议</a></li>
-                    <li><a>公告</a></li>
-                    <li><a>动态</a></li>
-                    <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><span class="fly-mid"></span></li>
-                </ul>
-
-                <div class="fly-column-right layui-hide-xs">
-                    <span class="fly-search"><i class="layui-icon"></i></span>
-                    <a class="layui-btn">发表新帖</a>
-                </div>
-                <div class="layui-hide-sm layui-show-xs-block" style="margin-top: -10px; padding-bottom: 10px; text-align: center;">
-                    <a class="layui-btn">发表新帖</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="layui-container">
         <div class="layui-row layui-col-space15">
@@ -634,76 +417,76 @@ var _hmt = _hmt || [];
 <!-- <link rel="stylesheet" href="https://cdn.miwb.cn/CDN/lander/lander.ui.css"> -->
 
 <script src="static/layer_mobile/layer.js"></script>
-
+<script src="static/js/jquery-1.8.3.min.js"></script>
 <script src="static/js/clipboard.min.js"></script>
 
 <script type="text/javascript">
 
-var browser = {
-    versions: function() {
-        var u = navigator.userAgent,
-        app = navigator.appVersion;
-        return { //移动终端浏览器版本信息 
-            trident: u.indexOf('Trident') > -1,
-            //IE内核 
-            presto: u.indexOf('Presto') > -1,
-            //opera内核 
-            webKit: u.indexOf('AppleWebKit') > -1,
-            //苹果、谷歌内核 
-            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
-            //火狐内核 
-            mobile: !!u.match(/AppleWebKit.*Mobile.*/),
-            //是否为移动终端 
-            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
-            //ios终端 
-            android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
-            //android终端或者uc浏览器 
-            iPhone: u.indexOf('iPhone') > -1,
-            //是否为iPhone或者QQHD浏览器 
-            iPad: u.indexOf('iPad') > -1,
-            //是否iPad 
-            webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部 
-        };
+// var browser = {
+//     versions: function() {
+//         var u = navigator.userAgent,
+//         app = navigator.appVersion;
+//         return { //移动终端浏览器版本信息 
+//             trident: u.indexOf('Trident') > -1,
+//             //IE内核 
+//             presto: u.indexOf('Presto') > -1,
+//             //opera内核 
+//             webKit: u.indexOf('AppleWebKit') > -1,
+//             //苹果、谷歌内核 
+//             gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+//             //火狐内核 
+//             mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+//             //是否为移动终端 
+//             ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+//             //ios终端 
+//             android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+//             //android终端或者uc浏览器 
+//             iPhone: u.indexOf('iPhone') > -1,
+//             //是否为iPhone或者QQHD浏览器 
+//             iPad: u.indexOf('iPad') > -1,
+//             //是否iPad 
+//             webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部 
+//         };
 
-    } (),
-        language: (navigator.browserLanguage || navigator.language).toLowerCase()
-}
+//     } (),
+//         language: (navigator.browserLanguage || navigator.language).toLowerCase()
+// }
     
-$(document).ready(function() {
-    $(".sp_xingming").text("静静");
-    $(".sp_xingming").css("color","red");
+// $(document).ready(function() {
+//     $(".sp_xingming").text("静静");
+//     $(".sp_xingming").css("color","red");
 
-        var clipboardJS = new ClipboardJS('.wxcode');
-        clipboardJS.on('success', function(e) { 
-            e.clearSelection();
-            if (browser.versions.mobile || browser.versions.ios || browser.versions.android || browser.versions.iPhone || browser.versions.iPad) {
-            layer.open({
+//         var clipboardJS = new ClipboardJS('.wxcode');
+//         clipboardJS.on('success', function(e) { 
+//             e.clearSelection();
+//             if (browser.versions.mobile || browser.versions.ios || browser.versions.android || browser.versions.iPhone || browser.versions.iPad) {
+//             layer.open({
                 
-                content: '<div class="ui-popbox"><p style="font-size: 20px;padding-bottom:15px;padding-top:15px;">微信号复制成功!</p><div class="ui-popcont"><span class="name-box" style="color:red;"><i class="ui-icon-rz"></i>静静</span> 的微信号<font color="#f00">13186062968</font><br>复制成功,立即打开微信添加好友!<div class="ui-wechat-qr-box"><div class="ui-pop-avatar"><img class="ldwximg_m" src="static/images/13186062968_headimg.jpg"><h4>①打开微信 ②右上角＋ ③添加朋友<br>④粘贴或输入微信号 ⑤搜索并添加到通讯录</h4></div><div class="ui-pop-qrcode"><h4>打开微信，“扫一扫” 添加好友</h4></div></div></div><div class="ui-popbtn"><a href="weixin://" class="ui-pop-ok ok_1565596613956"><font class="ui-pc-hid" style="color:#50b674;">打开微信</font></a><button type="button" class="ui-pop-no no_1565596613956" onclick="cale()">取消</button></div></div>'
+//                 content: '<div class="ui-popbox"><p style="font-size: 20px;padding-bottom:15px;padding-top:15px;">微信号复制成功!</p><div class="ui-popcont"><span class="name-box" style="color:red;"><i class="ui-icon-rz"></i>静静</span> 的微信号<font color="#f00">13186062968</font><br>复制成功,立即打开微信添加好友!<div class="ui-wechat-qr-box"><div class="ui-pop-avatar"><img class="ldwximg_m" src="static/images/13186062968_headimg.jpg"><h4>①打开微信 ②右上角＋ ③添加朋友<br>④粘贴或输入微信号 ⑤搜索并添加到通讯录</h4></div><div class="ui-pop-qrcode"><h4>打开微信，“扫一扫” 添加好友</h4></div></div></div><div class="ui-popbtn"><a href="weixin://" class="ui-pop-ok ok_1565596613956"><font class="ui-pc-hid" style="color:#50b674;">打开微信</font></a><button type="button" class="ui-pop-no no_1565596613956" onclick="cale()">取消</button></div></div>'
 
-            });
-        } else {
-            layer.open({
+//             });
+//         } else {
+//             layer.open({
                 
-                content: '<div class="ui-popbox"><p style="font-size: 20px;padding-bottom:15px;padding-top:15px;">微信号复制成功!</p><div class="ui-popcont"><span class="name-box" style="color:red;"><i class="ui-icon-rz"></i>静静</span> 的微信号<font color="#f00">13186062968</font><br>复制成功,立即打开微信添加好友!<div class="ui-wechat-qr-box"><div class="ui-pop-avatar"><img class="ldwximg_pc" src="static/images/13186062968_wx2.jpg"><h4>①打开微信 ②右上角＋ ③添加朋友<br>④粘贴或输入微信号 ⑤搜索并添加到通讯录</h4></div><div class="ui-pop-qrcode"><h4>打开微信，“扫一扫” 添加好友</h4></div></div></div><div class="ui-popbtn"><a href="weixin://" class="ui-pop-ok ok_1565596613956"><font class="ui-pc-hid" style="color:#50b674;">打开微信</font></a><button type="button" class="ui-pop-no no_1565596613956" onclick="cale()">取消</button></div></div>'
+//                 content: '<div class="ui-popbox"><p style="font-size: 20px;padding-bottom:15px;padding-top:15px;">微信号复制成功!</p><div class="ui-popcont"><span class="name-box" style="color:red;"><i class="ui-icon-rz"></i>静静</span> 的微信号<font color="#f00">13186062968</font><br>复制成功,立即打开微信添加好友!<div class="ui-wechat-qr-box"><div class="ui-pop-avatar"><img class="ldwximg_pc" src="static/images/13186062968_wx2.jpg"><h4>①打开微信 ②右上角＋ ③添加朋友<br>④粘贴或输入微信号 ⑤搜索并添加到通讯录</h4></div><div class="ui-pop-qrcode"><h4>打开微信，“扫一扫” 添加好友</h4></div></div></div><div class="ui-popbtn"><a href="weixin://" class="ui-pop-ok ok_1565596613956"><font class="ui-pc-hid" style="color:#50b674;">打开微信</font></a><button type="button" class="ui-pop-no no_1565596613956" onclick="cale()">取消</button></div></div>'
 
-            });
-        }
-            _czc.push(["_trackEvent","微信","加粉"]); 
-            _hmt.push(['_trackEvent',"微信","加粉"]);
-        });
-        clipboardJS.on('error', function(e) {
-            console.info('Action:', e.action);
-            console.info('Text:', e.text);
-            console.info('Trigger:', e.trigger);
-            e.clearSelection();
-        });
-    });
-    function cale() {
-        layer.closeAll();
-    }
+//             });
+//         }
+//             _czc.push(["_trackEvent","微信","加粉"]); 
+//             _hmt.push(['_trackEvent',"微信","加粉"]);
+//         });
+//         clipboardJS.on('error', function(e) {
+//             console.info('Action:', e.action);
+//             console.info('Text:', e.text);
+//             console.info('Trigger:', e.trigger);
+//             e.clearSelection();
+//         });
+//     });
+//     function cale() {
+//         layer.closeAll();
+//     }
 
-</script>
+// </script>
 
 </body>
 </html>
