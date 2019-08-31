@@ -317,8 +317,8 @@ body .layui-edit-face  .layui-layer-content{padding:0; background-color:#fff; co
 .jie-row li .jie-user img{position:relative; top: 16px; width: 35px; height: 35px;}
 
 /* Detail页 */
-.detail-box{padding: 15px;}
-.detail h1{font-size: 24px; line-height: 36px;}
+.detail-box{padding: 5px;}
+.detail h1{font-size: 22px; line-height: 30px;}
 .fly-detail-info{position: relative; margin: 10px 0 15px;}
 .fly-detail-info .layui-btn{height: 20px; line-height: 20px; vertical-align: top; border-radius: 0;}
 .fly-detail-info .layui-btn+.layui-btn{margin-left: 0;}
@@ -369,7 +369,7 @@ body .layui-edit-face  .layui-layer-content{padding:0; background-color:#fff; co
 .detail-about-reply .detail-hits{left: 0; bottom: 0;}
 .detail-about-reply .fly-avatar{left: 0; top: 0;}
 
-.jieda-body{margin: 25px 0 20px; min-height: 0; line-height: 24px; font-size:14px;}
+.jieda-body{margin: 25px 0 20px; min-height: 0; line-height: 24px;}
 .jieda-body p{margin-bottom: 10px;}
 .jieda-body a{color:#4f99cf}
 .jieda-reply{position:relative;}
