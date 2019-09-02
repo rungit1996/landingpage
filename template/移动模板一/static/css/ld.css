@@ -3,9 +3,7 @@ body {margin:0;padding:0;color: #474747;max-width:800px;margin: 0 auto;backgroun
 button {border: none;outline: none;}
 
 .ui {margin:0;padding:0;border:none;outline:none;list-style:none;}
-emoji {background-size:contain !important;color:transparent !important;white-space:nowrap !important;font-size:1.6em;padding:0 2px;}
 .ui-loading {position:relative;}
-.ui-loading:after {content:''; background:rgba(255, 255, 255, 0.8) url('img/loading.gif') no-repeat center center;position:absolute;width:100%;height:100%;top:0;left:0;}
 .ui-bg-white {background:#fff;}
 .ui-bg-none {background:none;}
 .ui-cc:before,.ui-cc:after {content:''; display:block; clear:both;}
@@ -88,7 +86,7 @@ emoji {background-size:contain !important;color:transparent !important;white-spa
 .coments>li>.hd .avatar>img {height:40px;}
 .coments>li>.hd .name {height: 40px;margin-left: 10px;}
 .coments>li>.hd .name>b {display: block;font-weight: normal;height: 20px;line-height: 20px;}
-.coments>li>.hd .name>b>i {display: inline-block;float: right;height: 16px;line-height: 16px;font-size: 12px;font-style: normal;background: #ffd500;color: #444;padding: 0 5px;border-radius:4px;margin:2px 0 2px 5px;}
+.coments>li>.hd .name>b>i {display: inline-block;height: 16px;line-height: 16px;font-size: 12px;font-style: normal;background: #ffd500;color: #444;padding: 0 5px;border-radius:4px;margin:2px 0 2px 5px;}
 .coments>li>.hd .name>p {height: 20px;line-height:30px;margin: 0;font-size: 13px;color: #888;}
 .coments>li>.cont {font-size: 16px;line-height: 25px;}
 .coments>li>.cont>img {display: block;max-width: calc(100% - 20px);margin: 10px auto;}
