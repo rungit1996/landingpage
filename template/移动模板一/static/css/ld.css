@@ -1,7 +1,10 @@
-html {margin: 0;padding: 0;background:#f4f4f4;}
-body {margin:0;padding:0;color: #474747;max-width:800px;margin: 0 auto;background:#fff;}
+/* html {margin: 0;padding: 0;background:#f4f4f4;} */
+body {margin:0;padding:0;color: #474747;max-width:768px;margin: 0 auto;background:#fff;}
 button {border: none;outline: none;}
 
+.main {
+	width: 100%;
+}
 .ui {margin:0;padding:0;border:none;outline:none;list-style:none;}
 .ui-loading {position:relative;}
 .ui-bg-white {background:#fff;}
@@ -44,14 +47,14 @@ button {border: none;outline: none;}
 
 .auto_like_btn {background:transparent;border:none;outline:none;border-radius:5px;color:#666;padding:0;cursor:pointer;}
 
-@media (max-width:600px){
+/* @media (max-width:600px){
 	.ui-mobile-hid {display: none;}
 	.ui-popwarp .ui-popbox .ui-wechat-qr-box .ui-pop-qrcode {display: none;}
 }
 @media (min-width:601px){
 	.ui-popwarp .ui-popbox .ui-wechat-qr-box .ui-pop-avatar {display: none;}
 	.ui-pc-hid {display: none;}
-}
+} */
 
 .ui-badge,.ui-badge-security {border:1px solid currentColor;border-left:none;display:inline-block;font-size:1em;padding:0 0.5em 0 1em;position:relative;margin-left:0.8em;line-height:normal;}
 .ui-badge-security:before {content:"\e654";font-size:2.2em;left:-0.6em;top:-0.255em;}
@@ -127,5 +130,4 @@ p > .pictures {
 
 .fa-location-arrow {
 	font-size: 1em;
-	margin-right: 10px;
 }
