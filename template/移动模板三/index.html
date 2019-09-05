@@ -17,27 +17,6 @@
 
 <link rel="stylesheet" type="text/css" href="static/css/ld.css" />
 
-<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.1/jquery.lazyload.min.js"></script>
-<script>
-  $(function() {
-      $("img").lazyload(
-        {
-          // 距离屏幕 200 像素时加载
-          threshold:200,
-          // 淡入效果
-          effect:"fadeIn",
-          // 当插件找到10个不在可见区域内的图片时停止搜索
-          failure_limit : 10,
-          // 加载隐藏图片
-          skip_invisible : false,
-          // 设置占位符替代显示区域内待加载的图片
-          // placeholder:'loading.gif'
-        }
-      );
-  });
-</script>
-
 <!-- 统计代码 -->
 <!-- 统计代码 -->
 
@@ -501,5 +480,27 @@
 </div>
 
 <script src="static/js/ld.js"></script>
+
+<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.1/jquery.lazyload.min.js"></script>
+<script>
+$(function() {
+  $("img").lazyload(
+    {
+      // 距离屏幕 200 像素时加载
+      threshold:200,
+      // 淡入效果
+      effect:"fadeIn",
+      // 当插件找到10个不在可见区域内的图片时停止搜索
+      failure_limit : 10,
+      // 加载隐藏图片
+      skip_invisible : false,
+      // 设置占位符替代显示区域内待加载的图片
+      // placeholder:'loading.gif'
+    }
+  );
+});
+</script>
+
 </body>
 </html>
