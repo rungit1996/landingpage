@@ -12,7 +12,7 @@ $("img").lazyload(
     // 设置占位符替代显示区域内待加载的图片
     // placeholder:'loading.gif'
     }
-);
+    );
 });
 
 $(document).ready(function () {
