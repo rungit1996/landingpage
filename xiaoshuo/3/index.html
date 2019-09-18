@@ -306,7 +306,7 @@
         <div class="piece wechat-piece" style="background-color:rgb(207, 226, 243);color:rgba(0, 0, 0, 1);width: 100%;height: 50px;">
             <div class="header-img" style="background:url(https://p9-tt.byteimg.com/obj/ad-tetris-site/file/1562430418001/2cb9e6ab84c7df948eb9c485766cd093) no-repeat center;background-size:cover;"></div>
             <p id="wechat-a6" class="wechat-id">青枣读吧</p>
-            <bu't id="a6" onclick="ldclick()" data-clipboard-target="#wechat-a6" class="wechat-btn" style="background-color:#f85959;color:rgba(255, 255, 255, 1);">+ 关注</bu't>
+        <a href="javascript:void(0);" style="background-color:#f85959;color:rgba(255, 255, 255, 1);" data-clipboard-text="青枣读吧" class="wxcode wechat-btn" >+ 关注</a>
         </div>
 
         <div class="extra--3822B">
@@ -321,10 +321,22 @@
 
     </div>
 
-    <script>
-        function ldclick() {
-            window.location.href="weixin://";
-        }
-    </script>
+<script src="jquery-1.8.3.min.js"></script>
+<script src="clipboard.min.js"></script>
+<script>
+$(document).ready(function() {
+    var clipboardJS = new ClipboardJS('.wxcode');
+    clipboardJS.on('success', function(e) { 
+        e.clearSelection();
+        window.location.href="weixin://";
+    });
+    clipboardJS.on('error', function(e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        e.clearSelection();
+    });
+});
+</script>
 </body>
 </html>
